@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: movements
+    database: data_upload
+    schema: BIModelDB
+    tables:
+      - name: OpenMaint_Warehouse_movements
+      - name: OpenMaint_Warehouse_movement_rows
+
+models:
+  - name: warehouse_movements
+    description: "Movimientos de almacén"
+    columns:
+      - name: _id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: warehouse_movement_rows
+    description: "lineas de movimientos de almacén"
+    columns:
+      - name: _id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      
+  
