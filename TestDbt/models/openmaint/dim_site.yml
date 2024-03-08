@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_site
+    description: Description of the dim_site model
+    columns:
+      - name: id
+        description: The id of the site
+        tests:
+          - not_null
+          - unique
+      - name: code
+        description: The code of the site
+        tests:
+          - not_null
+      - name: description
+        description: The description of the site
+        tests:
+          - not_null

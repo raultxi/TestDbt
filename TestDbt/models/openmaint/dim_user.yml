@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_user
+    description: Description of the dim_user model
+    columns:
+      - name: username
+        description: The unique identifier of the user
+        tests:
+          - not_null
+          - unique

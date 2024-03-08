@@ -1,0 +1,94 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: Description of the dim_date model
+    columns:
+      - name: Date
+        description: The date
+        tests:
+          - not_null
+      - name: Year
+        description: The year extracted from the date
+        tests:
+          - not_null
+      - name: Month
+        description: The month extracted from the date
+        tests:
+          - not_null
+      - name: MonthName
+        description: The localized month name
+        tests:
+          - not_null
+      - name: Day
+        description: The day extracted from the date
+        tests:
+          - not_null
+      - name: DayOfYear
+        description: The day of the year
+        tests:
+          - not_null
+      - name: WeekdayName
+        description: The localized weekday name
+        tests:
+          - not_null
+      - name: CalendarWeek
+        description: The ISO calendar week
+        tests:
+          - not_null
+      - name: FormattedDate
+        description: The formatted date
+        tests:
+          - not_null
+      - name: Quartal
+        description: The quarter of the year
+        tests:
+          - not_null
+      - name: YearQuartal
+        description: The year and quarter
+        tests:
+          - not_null
+      - name: YearMonth
+        description: The year and month
+        tests:
+          - not_null
+      - name: YearCalendarWeek
+        description: The ISO calendar year and week
+        tests:
+          - not_null
+      - name: Weekend
+        description: Indicates if the day is a weekend or a weekday
+        tests:
+          - not_null
+      - name: AmericanHoliday
+        description: Indicates if the day is a holiday in America
+        tests:
+          - not_null
+      - name: AustrianHoliday
+        description: Indicates if the day is a holiday in Austria
+        tests:
+          - not_null
+      - name: CanadianHoliday
+        description: Indicates if the day is a holiday in Canada
+        tests:
+          - not_null
+      - name: Period
+        description: Indicates the period of the year
+        tests:
+          - not_null
+      - name: CWStart
+        description: The start of the ISO week
+        tests:
+          - not_null
+      - name: CWEnd
+        description: The end of the ISO week
+        tests:
+          - not_null
+      - name: MonthStart
+        description: The start of the month
+        tests:
+          - not_null
+      - name: MonthEnd
+        description: The end of the month
+        tests:
+          - not_null

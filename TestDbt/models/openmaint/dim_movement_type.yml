@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_movement_type
+    description: Description of the dim_movement_type model
+    columns:
+      - name: id
+        description: The id of the category
+        tests:
+          - not_null
+      - name: code
+        description: The code of the category
+        tests:
+          - not_null
+      - name: Description
+        description: The description of the category
+        tests:
+          - not_null
+      - name: subid
+        description: The id of the subcategory
+        tests:
+          - not_null
+      - name: subcode
+        description: The code of the subcategory
+        tests:
+          - not_null
+      - name: subdescription
+        description: The description of the subcategory
+        tests:
+          - not_null

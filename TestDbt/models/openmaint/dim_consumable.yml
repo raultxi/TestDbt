@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_consumable
+    description: Description of the dim_consumable model
+    columns:
+      - name: Consumable
+        description: Description of Consumable
+        tests:
+          - not_null
+          - unique
+      - name: Description
+        description: Description of _Consumable_description
+        tests:
+          - not_null

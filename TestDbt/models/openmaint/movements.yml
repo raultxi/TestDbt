@@ -1,0 +1,126 @@
+version: 2
+
+models:
+  - name: movements
+    description: Description of the movements model
+    columns:
+      - name: _id
+        description: The id of the warehouse movement
+        tests:
+          - not_null
+      - name: Code
+        description: The code of the warehouse movement
+        tests:
+          - not_null
+      - name: Date
+        description: The date of the warehouse movement
+        tests:
+          - not_null
+      - name: _type
+        description: The type of the warehouse movement
+        tests:
+          - not_null
+      - name: _user
+        description: The user who made the warehouse movement
+        tests:
+          - not_null
+      - name: Details
+        description: The details of the warehouse movement
+        tests:
+          - not_null
+      - name: DstSite
+        description: The destination site of the warehouse movement
+      - name: SrcSite
+        description: The source site of the warehouse movement
+      - name: Category
+        description: The category of the warehouse movement
+        tests:
+          - not_null
+      - name: _beginDate
+        description: The begin date of the warehouse movement
+        tests:
+          - not_null
+      - name: Description
+        description: The description of the warehouse movement
+        tests:
+          - not_null
+      - name: Subcategory
+        description: The subcategory of the warehouse movement
+        tests:
+          - not_null
+      - name: _DstSite_code
+        description: The code of the destination site
+      - name: _SrcSite_code
+        description: The code of the source site
+      - name: _Category_code
+        description: The code of the category
+        tests:
+          - not_null
+      - name: _Subcategory_code
+        description: The code of the subcategory
+        tests:
+          - not_null
+      - name: _DstSite_description
+        description: The description of the destination site
+      - name: _SrcSite_description
+        description: The description of the source site
+      - name: _Category_description
+        description: The description of the category
+        tests:
+          - not_null
+      - name: _Subcategory_description
+        description: The description of the subcategory
+        tests:
+          - not_null
+      - name: _Category_description_translation
+        description: The translated description of the category
+        tests:
+          - not_null
+      - name: _Subcategory_description_translation
+        description: The translated description of the subcategory
+        tests:
+          - not_null
+      - name: wmr_id
+        description: The id of the warehouse movement row
+        tests:
+          - not_null
+      - name: wmr_type
+        description: The type of the warehouse movement row
+        tests:
+          - not_null
+      - name: wmr_user
+        description: The user who made the warehouse movement row
+        tests:
+          - not_null
+      - name: Quantity
+        description: The quantity of the warehouse movement row
+        tests:
+          - not_null
+      - name: Consumable
+        description: The consumable of the warehouse movement row
+        tests:
+          - not_null
+      - name: wmr_beginDate
+        description: The begin date of the warehouse movement row
+        tests:
+          - not_null
+      - name: wmr_Description
+        description: The description of the warehouse movement row
+        tests:
+          - not_null
+      - name: WrhMovement
+        description: The warehouse movement of the warehouse movement row
+        tests:
+          - not_null
+      - name: _WrhMovement_code
+        description: The code of the warehouse movement
+        tests:
+          - not_null
+      - name: _Consumable_description
+        description: The description of the consumable
+        tests:
+          - not_null
+      - name: _WrhMovement_description
+        description: The description of the warehouse movement
+        tests:
+          - not_null

@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: fct_movements
+    description: Description of the fct_movements model
+    columns:
+      - name: DstSite
+        description: The destination site
+      - name: SrcSite
+        description: The source site
+      - name: Category
+        description: The category of the movement
+        tests:
+          - not_null
+      - name: Subcategory
+        description: The subcategory of the movement
+        tests:
+          - not_null
+      - name: user
+        description: The user who made the movement
+        tests:
+          - not_null
+      - name: Quantity
+        description: The quantity of the movement
+        tests:
+          - not_null
+      - name: Consumable
+        description: The consumable of the movement
+        tests:
+          - not_null
+      - name: date
+        description: The date of the movement
+        tests:
+          - not_null
+      - name: Year
+        description: The year of the movement
+        tests:
+          - not_null
+      - name: Month
+        description: The month of the movement
+        tests:
+          - not_null
+      - name: Day
+        description: The day of the movement
+        tests:
+          - not_null
+      - name: Hour
+        description: The hour of the movement
+        tests:
+          - not_null
+      - name: Minute
+        description: The minute of the movement
+        tests:
+          - not_null

@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: dim_time
+    description: Description of the dim_time model
+    columns:
+      - name: TimeOfDay
+        description: The time of day in hh24:mi format
+        tests:
+          - not_null
+      - name: Hour
+        description: The hour of the day (0 - 23)
+        tests:
+          - not_null
+      - name: QuarterHour
+        description: The quarter hour of the day
+        tests:
+          - not_null
+      - name: minute
+        description: The minute of the day (0 - 1439)
+        tests:
+          - not_null
+      - name: DaytimeName
+        description: The name of the day period (Morning, AM, PM, Evening, Night)
+        tests:
+          - not_null
+      - name: DayNight
+        description: Indicator of day or night
+        tests:
+          - not_null
